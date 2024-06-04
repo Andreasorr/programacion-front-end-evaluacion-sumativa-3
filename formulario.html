@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container my-3">
+        <form action="confirmacion.html" method="post" class="row g-3" onsubmit="return confirmacion()">
+            <h2>Información Necesaria</h2>
+            <hr>
+            <div class="col-8">            
+                <label class="form-label">Ingrese su correo</label>
+                <input id="input-correo" class="form-control" type="text" placeholder="su.correo@mail.com">
+                <div id="error-correo"></div>
+            </div>
+            <div class="col-12 col-md-6">
+                <label class="form-label">Ingrese su contraseña</label>
+                <input id="input-contraseña" class="form-control" type="text" placeholder="Escriba su contraseña aqui">
+                <div id="error-contraseña"></div>
+            </div>
+            <div class="col-12 col-md-6">
+                <label class="form-label">Confirme su contraseña</label>
+                <input id="input-contraseña-confirmacion" class="form-control" type="text" placeholder="Confirme su contraseña aqui">
+                <div id="error-contraseña-confirmacion"></div>
+            </div>
+            <hr>
+            <h2>Datos Personales</h2>
+            <hr>
+            <div class="col-12 col-md-6">
+                <label class="form-label">Ingrese su dirección</label>
+                <input id="input-direccion" class="form-control" type="text" placeholder="Av. Pedro Aguirre Cerda 2115">
+                <div id="error-direccion"></div>
+            </div>
+            <div class="col-12 col-md-4">
+                <label class="form-label" >Seleccione su comuna</label>
+                <select id="select-comuna" class="form-select">
+                    <option value="vacio" style="display:none;"></option>
+                    <option value="valdivia">Valdivia</option>
+                    <option value="osorno">Osorno</option>
+                    <option value="puerto-montt">Puerto Montt</option>
+                    <option value="valparaiso">Valparaiso</option>
+                </select>
+                <div id="error-comuna"></div>
+            </div>
+            <div class="col-12 col-md-3">
+                <label class="form-label">Ingrese su numero de teléfono</label>
+                <input id="input-fono" class="form-control" type="text" placeholder="+569 1234 5678">
+                <div id="error-fono"></div>
+            </div>
+            <div class="col-12 col-md-6">
+                <label class="form-label">URL de su sitio web</label>
+                <input id="input-url" class="form-control" type="text" placeholder="https://www.su-sitio.com">
+                <div id="error-url"></div>
+            </div>
+            <div class="col-12">
+                <label class="form-label">Seleccione las aficiones o pasatiempos que tenga (2 minimo):</label>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="check-cocinar">
+                        <label class="form-check-label" for="check-cocinar">Cocinar</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="check-lectura">
+                        <label class="form-check-label" for="check-lectura">Lectura</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="check-foto">
+                        <label class="form-check-label" for="check-foto">Fotografía</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="check-jardineria">
+                        <label class="form-check-label" for="check-jardineria">Jardinería</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="check-pintura">
+                        <label class="form-check-label" for="check-pintura">Pintura</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="check-senderismo">
+                        <label class="form-check-label" for="check-senderismo">Senderismo</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="check-esgrima">
+                        <label class="form-check-label" for="check-esgrima">Esgrima</label>
+                    </div>
+                </div>
+                <div id="error-aficiones-pasatiempos"></div>
+                <div class="col my-3">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>    
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</htm
